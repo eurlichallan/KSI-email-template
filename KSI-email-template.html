@@ -1,173 +1,357 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
  <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Demystifying Email Design</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>KSI Email Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <!-- HEADER -->
+  <style type="text/css"> 
+    @import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap); /*Calling our web font*/
+
+    body {
+        Margin: 0;
+        padding: 0;
+        background-color: lightblue;
+
+    }
+    table {
+        border-spacing: 0;
+    }
+    td {
+        padding: 0;
+    }
+    img {
+        border: 0;
+    }
+    .wrapper {
+        width: 100%;
+        table-layout: fixed;
+        background-color: #fafafa;
+        padding-bottom: 16px;
+
+    }
+    .webkit {
+        max-width: 600px;
+        background-color: white;
+        padding: 8px 8px 8px 8px;
+    }
+    .outer {
+        Margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+        border-spacing: 0;
+        font-family: 'Lato', sans-serif;
+        color: #243D94;
+    }
+    .padding {
+        padding: 8px;
+    }
+    .two-columns {
+        text-align: left;
+        font-size: 0;
+        line-height: 0;
+    }
+    .two-columns .column {
+        width: 100%;
+        max-width: 300px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .two-columns .content {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    h5 {
+      Margin: 8px 0 8px 0;
+    }
+    p {
+      Margin: 8px 0 8px 0;
+    }
+
+    @media screen and (max-width: 600px) {
+
+    }
+    @media screen and (max-width: 400px) {
+
+    }
+
+  </style>
 </head>
 
-<body style="margin: 0,;padding: 0;">
-  <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;"">
-    <tr>
-      <td bgcolor="#ffffff" align="center" style="padding: 0 0 0 0">
-        <img src="images/email_template_header.png" alt="JKT-06 Booking" width="600" height="200" style="display: block;">
-      </td>
-    </tr>
-    <tr>
-      <td bgcolor="#FBFDFF" style="padding: 24px 24px 24px 24px">
-  
-        <!-- HEADER -->
-        <table border="0" cellpadding="0" cellspacing="0" width="100%">
-          <tr>
-            <td align="center">
-              <p style="font-family:Arial, Helvetica, sans-serif; font-size: 26px; font-weight: 700; color: #243D94">
-                Kode Booking JKT-06
-              </p> 
-            </td>
-          </tr>
-        </table>
+<body>
 
-        <hr style="width: 100%; height: 2px; border-width: 0; color: #EDF5FF; background-color: #EDF5FF; ">
+    <center class="wrapper">
+        <div class="webkit">
+            <table class="outer" align="center">
+                <!-- HEADER IMAGE -->
+                <tr>
+                    <td>
+                        <table width="100%" style="border-spacing: 0;">
+                            <tr>
+                                <td style="text-align: center;">
+                                    <img src="images/email_template_header.png" alt="KSI_Logo" style="display: block; width: 100%;">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
 
-        <!-- BOOKING STATUS -->
-        <table border="0" cellpadding="0" cellspacing="0" width="100%">
-          <tr>
-            <td width="50%">
-              <p style="font-family:Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; color: #7891D1">
-                Batch
-              </p>
-              <p style="font-family:Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 600; color: #243D94">
-                01
-              </p> 
-            </td>
-            <td width="50%">
-              <p style="font-family:Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; color: #7891D1">
-                Nomor Booking
-              </p>
-              <p style="font-family:Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 600; color: #243D94">
-                001NNNN
-              </p> 
-            </td>
-          </tr>
-          <tr>
-            <td width="50%">
-              <p style="font-family:Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; color: #7891D1">
-                Tanggal Pemesanan
-              </p>
-              <p style="font-family:Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 600; color: #243D94">
-                DD/MM/YYYY
-              </p> 
-            </td>
-            <td width="50%">
-              <p style="font-family:Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; color: #7891D1">
-                Status Pemesanan
-              </p>
-              <p style="font-family:Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 600; color: #243D94">
-                Lunas
-              </p> 
-            </td>
-          </tr>
-        </table>
+                <!-- HEADLINE -->
+                <tr>
+                    <td style="padding: 16px 16px 16px 16px;">
+                        <h2 style="text-align: center;">JKT-06 BOOKING</h2>
+                    </td>
+                </tr>
+               
+                
 
-        <hr style="width: 100%; height: 2px; border-width: 0; color: #EDF5FF; background-color: #EDF5FF; ">
+                <!-- STATUS -->
+                <tr>
+                    <td>
+                        <table width="100%" style="border-spacing: 0;">
+                            <tr>
+                                <td class="two-columns">
+                                    <hr style="width: 97%; height: 1px; border-width: 0; color: #EDF5FF; background-color: #EDF5FF;">
 
-        <!-- HEADER DETIL PEMESANAN -->
-        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:18px 0 0 0" >
-          <tr>
-            <td align="center">
-              <p style="font-family:Arial, Helvetica, sans-serif; font-size: 18px; font-weight: 700; color: #243D94">
-                Detil Pemesanan
-              </p> 
-            </td>
-          </tr>
-        </table>
-        
-        <hr style="width: 100%; height: 2px; border-width: 0; color: #EDF5FF; background-color: #EDF5FF; ">
+                                    <table class="column">
+                                        <tr>
+                                            <td class="padding">
 
-        <!-- DETIL PEMESANAN -->
-        <table border="0" cellpadding="0" cellspacing="0" width="100%">
-          <tr>
-            <td width="50%">
-              <p style="font-family:Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; color: #7891D1">
-                Nama Partisipan
-              </p>
-              <p style="font-family:Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 600; color: #243D94">
-                Rizky Herico Putra
-              </p> 
-            </td>
-            <td width="50%">
-              <p style="font-family:Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; color: #7891D1">
-                Alamat Email
-              </p>
-              <p style="font-family:Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 600; color: #243D94">
-                Rizky Herico Putra
-              </p> 
-            </td>
-          </tr>
-          <tr>
-            <td width="50%">
-              <p style="font-family:Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; color: #7891D1">
-                NIK
-              </p>
-              <p style="font-family:Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 600; color: #243D94">
-                3278-0106-0592-0003
-              </p> 
-            </td>
-            <td width="50%">
-              <p style="font-family:Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; color: #7891D1">
-                Jumlah Lot yang dibeli
-              </p>
-              <p style="font-family:Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 600; color: #243D94">
-                5 Lot
-              </p> 
-            </td>
-          </tr>
-          <tr>
-            <td width="50%">
-              <p style="font-family:Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; color: #7891D1">
-                No Handphone
-              </p>
-              <p style="font-family:Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 600; color: #243D94">
-                +62-8953-4358-3102
-              </p> 
-            </td>
-            <td width="50%">
-              <p style="font-family:Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; color: #7891D1">
-                Total uang yang ditransfer
-              </p>
-              <p style="font-family:Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 600; color: #243D94">
-                Rp. 25.000.000
-              </p> 
-            </td>
-          </tr>
-        </table>
+                                                <table class="content">
+                                                    <tr>
+                                                        <td>
+                                                            <h5 style="color: #7891D1;">Batch</h5>
+                                                            <p style="font-weight: 600; ">01</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
 
-        <hr style="width: 100%; height: 2px; border-width: 0; color: #EDF5FF; background-color: #EDF5FF; ">
+                                            </td>
+                                        </tr>
+                                    </table>
 
-        <table>
-          <tr>
-            <td>
-              <p style="font-family:Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 300; color: #243D94; line-height: 24px;">
-                Terima kasih telah melakukan pemesanan untuk project JKT-06. Mohon simpan kode booking ini agar nanti bisa digunakan sebagai klaim untuk mendapatkan lot project JKT-06. Partisipan berhak mendapatkan laporan dan cashback setiap 3 bulan terhitung sejak proses booking berakhir.
-              </p>
-              <p style="font-family:Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 600; font-style: italic; color: #243D94; line-height: 24px;" >
-                *Lot yang didapatkan akan disesuaikan dengan jumlah total uang yang sudah Anda transfer
-              </p>
-              <p style="font-family:Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 300; color: #243D94; line-height: 24px;">
-                -- 
-                <br>
-                Terima kasih. 
-                <br>
-                Salam.
-              </p>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
+                                    <table class="column">
+                                        <tr>
+                                            <td class="padding">
 
-  </table>
-  
+                                                <table class="content">
+                                                    <tr>
+                                                        <td>
+                                                            <h5 style="color: #7891D1;">Nomor Booking</h5>
+                                                            <p style="font-weight: 600; ">0000NNNN </p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="two-columns">
+                                    <table class="column">
+                                        <tr>
+                                            <td class="padding">
+
+                                                <table class="content">
+                                                    <tr>
+                                                        <td>
+                                                            <h5 style="color: #7891D1;">Tanggal Pemesanan</h5>
+                                                            <p style="font-weight: 600; ">DD/MM/YYYY</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    <table class="column">
+                                        <tr>
+                                            <td class="padding">
+
+                                                <table class="content">
+                                                    <tr>
+                                                        <td>
+                                                            <h5 style="color: #7891D1;">Status Pemesanan</h5>
+                                                            <p style="font-weight: 600; ">Lunas</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <hr style="width: 97%; height: 1px; border-width: 0; color: #EDF5FF; background-color: #EDF5FF;">
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                    
+                </tr>
+              
+
+                <!-- SUBHEADLINE -->
+                <tr> 
+                    <td style="padding: 32px 0 0 0;">
+                        <h4 style="text-align: center;">DETIL PEMESANAN</h4>  
+                    </td>
+                </tr>
+                
+                <!-- CONTENT -->
+                <tr>
+                    <td>
+                        <hr style="width: 97%; height: 1px; border-width: 0; color: #EDF5FF; background-color: #EDF5FF;">                    
+
+                        <table width="100%" style="border-spacing: 0;">
+                            <tr>
+                                <td class="two-columns">
+
+                                    <table class="column">
+                                        <tr>
+                                            <td class="padding">
+
+                                                <table class="content">
+                                                    <tr>
+                                                        <td>
+                                                            <h5 style="color: #7891D1;">Nama Partisipan</h5>
+                                                            <p style="font-weight: 600; ">Rizky Herico Putra</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    <table class="column">
+                                        <tr>
+                                            <td class="padding">
+
+                                                <table class="content">
+                                                    <tr>
+                                                        <td>
+                                                            <h5 style="color: #7891D1;">Jumlah Lot</h5>
+                                                            <p style="font-weight: 600; "> 5 Lot</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </table>                                  
+                                </td>
+                            </tr> 
+
+                            <tr>
+                                <td class="two-columns">
+
+                                    <table class="column">
+                                        <tr>
+                                            <td class="padding">
+
+                                                <table class="content">
+                                                    <tr>
+                                                        <td>
+                                                            <h5 style="color: #7891D1;">Nomor Ponsel</h5>
+                                                            <p style="font-weight: 600; ">+62-8953-4358-3102</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    <table class="column">
+                                        <tr>
+                                            <td class="padding">
+
+                                                <table class="content">
+                                                    <tr>
+                                                        <td>
+                                                            <h5 style="color: #7891D1;">Total uang yang ditransfer</h5>
+                                                            <p style="font-weight: 600; ">Rp. 25.000.000</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </table>                                  
+                                </td>
+                            </tr> 
+                            
+                            <tr>
+                                <td class="two-columns">
+
+                                    <table class="column">
+                                        <tr>
+                                            <td class="padding">
+
+                                                <table class="content">
+                                                    <tr>
+                                                        <td>
+                                                            <h5 style="color: #7891D1;">Alamat Email</h5>
+                                                            <p style="font-weight: 600; ">rizky@landx.id</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    <hr style="width: 97%; height: 1px; border-width: 0; color: #EDF5FF; background-color: #EDF5FF;">                                
+                                </td>
+                            </tr> 
+
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding: 16px 8px 16px 8px">
+                        <p>
+                            Terima kasih telah melakukan pemesanan untuk project JKT-06.
+                            Mohon simpan kode booking ini agar nanti bisa digunakan sebagai klaim untuk mendapatkan lot project JKT-06.
+                            Partisipan berhak mendapatkan laporan dan cashback setiap 3 bulan terhitung sejak proses booking berakhir.
+                        </p>
+                        <p style= "font-size: 14px; font-weight: 400; font-style: italic; line-height: 24px;" >
+                            *Lot yang didapatkan akan disesuaikan dengan jumlah total uang yang sudah Anda transfer
+                        </p>
+                        <p>
+                            -- 
+                            <br>
+                            Terima kasih. 
+                            <br>
+                            Salam.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>
